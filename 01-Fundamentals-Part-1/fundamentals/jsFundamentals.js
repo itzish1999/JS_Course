@@ -67,7 +67,7 @@ const quest4 = '123' < 57; // false
 const quest5 = 5 + 6 + '4' + 9 - 4 - 2; // 117
 
 console.log(quest1, quest2, quest3, quest4, quest5);
-*/
+
 
 // Equality Operators: == vs ===
 
@@ -80,3 +80,17 @@ if (numNeighbors === 1) {
 } else {
     console.log("No borders!");
 }
+
+
+// Logical Operators: Sarah wants to live in a country that speaks English, has less than 50 Million people, and isn't an island
+const country = "USA"
+const countryLanguage = "English";
+const countryPopulation = 329500000;
+const isIsland = false;
+
+if (countryLanguage === "English" && countryPopulation < 50000000 && isIsland === false) {
+    console.log(`Sarah should live in ${country}!`);
+} else {
+    console.log(`${country} doesn't meet your criteria! :(`);
+}
+*/
