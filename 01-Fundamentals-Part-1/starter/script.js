@@ -179,5 +179,87 @@ console.log('23' / 2); // Same as the - operator
 let n = '1' + 1; // n becomes 11
 n = n - 1; // Converted to a number due to -
 console.log(n); // n = 10
+
+
+// Truthy / Falsy values: When converted to a boolean, values can become one of either:
+
+
+// 5 Falsy Values: 0, '', undefined, null, NaN
+
+// Everything else would be truthy an empty object {} is truthy
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+
+
+const money = 100;
+if (money) {
+    console.log("Don't spend it all ;)");
+} else {
+    console.log("You should get a job!");
+}
+
+let height = 0;
+if (height) {
+    console.log("YAY! Height is defined");
+} else {
+    console.log("HEIGHT is UNDEFINED");
+}
+
+
+// Equality Operators == vs ===
+
+// Rule of thumb: If you want to use the boolean operators you're better off using === and manually changing it for type coercion!
+const age = 18;
+if (age === 18) console.log("You just became an adult! (strict)"); // === is strict equality where type coercion does not happen
+
+if (age == 18) console.log("You just became an adult! (loose)"); // lets say '18' == 18 we will get a true since type coercion happens here. JS makes '18' a number
+
+const favorite = Number(prompt("What's ypu're favorite number?"));
+console.log(favorite);
+console.log(typeof (favorite));
+
+if (favorite === 23) { // '23' == 23
+    console.log("Why would you like 23? Why not 25?");
+} else if (favorite === 7) {
+    console.log("7 is a cool number");
+} else if (favorite === 9) {
+    console.log("9 is a cool number");
+} else {
+    console.log("Number is not 7, 9, or 23");
+}
+
+if (favorite !== 23) console.log("Why not 23?");
 */
 
+// Boolean Logic: The AND, OR & NOT OPERATORS
+
+// And operator requires all to be true for a true to be returned
+
+// OR operator requires one to be true
+
+// NOT operator requires inverts true/false value (if a is true it will become false. if it is false it will be true) uses !
+
+const hasDriverLicense = true; // A
+const hasGoodVision = true; // B
+
+console.log(hasDriverLicense && hasGoodVision); // && means AND. // If both are true console.log will return true.
+console.log(hasDriverLicense || hasGoodVision); // || means OR. If at least one is true console.log will return as true
+console.log(!hasDriverLicense); // ! means NOT operator which will turn the BOOLEAN value to the opposite one.
+
+// if (hasDriverLicense && hasGoodVision) {
+//     console.log("Sarah is able to drive!");
+// } else {
+//     console.log("Someone else should drive!");
+// }
+
+const isTired = false; // C
+console.log(hasDriverLicense && hasGoodVision && isTired);
+
+if (hasDriverLicense && hasGoodVision && !isTired) {
+    console.log("Sarah is able to drive!");
+} else {
+    console.log("Someone else should drive!");
+}
