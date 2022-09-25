@@ -56,7 +56,7 @@ if (usaPopulation > avgPopulation) {
     console.log(`usa Population is ${popDifference} below average!`);
 }
 
-*/
+
 
 // Type conversion and Coercion
 // Predict the results and check if I am right
@@ -67,3 +67,16 @@ const quest4 = '123' < 57; // false
 const quest5 = 5 + 6 + '4' + 9 - 4 - 2; // 117
 
 console.log(quest1, quest2, quest3, quest4, quest5);
+*/
+
+// Equality Operators: == vs ===
+
+let numNeighbors = Number(prompt("How many neighbor countries does your country have?"));
+
+if (numNeighbors === 1) {
+    console.log("Only 1 border!");
+} else if (numNeighbors > 1) {
+    console.log("More than 1 border");
+} else {
+    console.log("No borders!");
+}
