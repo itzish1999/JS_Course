@@ -120,3 +120,10 @@ switch (language) {
         console.log('Great Language Too! :D')
 }
 */
+
+// The Conditional (Ternary) Operator
+
+const myCountry = 'USA'
+const unitedStatesPop = 329500000;
+
+const population = unitedStatesPop > 33000000 ? console.log(`${myCountry} population is above average!`) : console.log(`${myCountry} population is below average!`);
