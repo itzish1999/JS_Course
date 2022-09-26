@@ -232,7 +232,7 @@ if (favorite === 23) { // '23' == 23
 }
 
 if (favorite !== 23) console.log("Why not 23?");
-*/
+
 
 // Boolean Logic: The AND, OR & NOT OPERATORS
 
@@ -263,3 +263,50 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 } else {
     console.log("Someone else should drive!");
 }
+
+
+// Switch statment 
+// A different way of writing a complicated if else statement when we want to compare one value to multiple different options
+
+const day = "Monday"; // Change this value to test the switch case statements!!
+
+switch (day) {
+    case 'Monday': // same as writing day === 'Monday
+        console.log('Plan course structure');
+        console.log('Go to coding meetup');
+        break; // Essentially tells the code to stop here
+    case 'Tuesday':
+        console.log('Prepare theory videos');
+        break;
+    case 'Wednesday':
+    case 'Thursday':
+        console.log('Write code examples');
+        break;
+    case 'Friday':
+        console.log('Record videos');
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        console.log('Enjoy the weekend :D');
+        break;
+    default: // Executes if al other cases fails; like an else statement
+        console.log('Not a valid day!');
+}
+
+
+// Challenge (Make the switch case example with an if / else if statement) && or ||? Which one should you use depending on the day?
+if (day === 'Monday') {
+    console.log('Plan course structure');
+    console.log('Go to coding meetup');
+} else if (day === 'Tuesday') {
+    console.log('Prepare theory videos');
+} else if (day == 'Wednesday' || day === 'Thursday') {
+    console.log('Write code examples');
+} else if (day === 'Friday') {
+    console.log('Record Videos');
+} else if (day === 'Saturday' || day === 'Sunday') {
+    console.log('Enjoy the weekend :D');
+} else {
+    console.log('Not a valid day!');
+}
+*/
