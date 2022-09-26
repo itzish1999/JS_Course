@@ -144,7 +144,7 @@ if (age >= 18) {
     console.log("Sarah can start driving license 🚗");
 } else {
     const yearsLeft = 18 - age;
-    console.log(`Sarah is too young. Wait another 
+    console.log(`Sarah is too young. Wait another
     ${yearsLeft} years :)`);
 }
 
@@ -265,7 +265,7 @@ if (hasDriverLicense && hasGoodVision && !isTired) {
 }
 
 
-// Switch statment 
+// Switch statment
 // A different way of writing a complicated if else statement when we want to compare one value to multiple different options
 
 const day = "Monday"; // Change this value to test the switch case statements!!
@@ -309,4 +309,19 @@ if (day === 'Monday') {
 } else {
     console.log('Not a valid day!');
 }
+
+
+// Statmenets and Expressions
+
+// An Expression is a piece of code that produces a value 3 + 4 is an expression
+// 1991 is an expression as well because it gives a value.
+//Boolean values are also expressions
+
+// Statements are bigger pieces of code that does not produce a value on itself.
+// Think of it as creating a sentence
+// If / Else statements are statements.
+// Strings itself is an expression and the act of delcaring a variable for a string is a statement:
+// const str = 'String';
+// If it ends with a semi colon ';' it is a statement!
+// __________________________________________________________________________
 */
