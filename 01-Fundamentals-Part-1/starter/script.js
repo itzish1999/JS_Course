@@ -325,3 +325,23 @@ if (day === 'Monday') {
 // If it ends with a semi colon ';' it is a statement!
 // __________________________________________________________________________
 */
+
+// The Conditional (Ternary) Operator. Operators always produces a value and that makes it an expression!
+// Another way of writing statements!
+// Something similar to if / else but all in one line!
+
+const age = 23;
+// age >= 18 ? console.log('I like to drink wine!') : console.log('I like to drink water!') // The ? is essentially the 'IF' block! The : is mandatory and is the 'ELSE' block!
+
+// A better way of using the Ternary Operator:
+const drink = age >= 18 ? 'Wine' : 'Water';
+console.log(drink);
+
+// You can use Ternary operators in Template Literal!!!
+
+console.log(`I like to drink ${drink}`);
+
+// Just remember Operators and of expression is something of which produces a value
+
+// Ternary is not a replacement of if / else statements. If we have bigger blocks of code we use if / else.
+// Ternary is perfect if we need to make a quick decision!
