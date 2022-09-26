@@ -93,4 +93,30 @@ if (countryLanguage === "English" && countryPopulation < 50000000 && isIsland ==
 } else {
     console.log(`${country} doesn't meet your criteria! :(`);
 }
+
+
+// The Switch Case Statement
+
+const language = 'English';
+
+switch (language) {
+    case 'Chinese':
+    case 'Mandarin':
+        console.log('MOST number of native speakers!')
+        break;
+    case 'Spanish':
+        console.log('2nd place in number of native speakers!')
+        break;
+    case 'English':
+        console.log('3rd most spoken language!')
+        break;
+    case 'Hindi':
+        console.log('4th most spoken language')
+        break;
+    case 'Arabic':
+        console.log('5th most spoken language!')
+        break;
+    default:
+        console.log('Great Language Too! :D')
+}
 */
