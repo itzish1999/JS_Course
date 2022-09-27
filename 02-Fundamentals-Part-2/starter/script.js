@@ -73,4 +73,32 @@ console.log(age1, age2);
 // Functions are values in JavaScript!
 
 // Use whichever format you'd like! I'd prefer function expressions so that I can organize my code however I would like to. Expressions > Declarations imo
+
+
+// Arrow Functions
+
+// Normal Function
+const calcAge2 = function (birthYear) { // called an anonymous function
+    return 2037 - birthYear;
+}
+
+// Arrow Function
+const calcAge3 = birthYear => 2037 - birthYear;
+
+const age3 = calcAge3(1999);
+
+console.log(age3);
+
+const yearsUntillRetirement = (birthYear, firstName) => {
+    const age = 2037 - birthYear;
+    const retirement = 65 - age;
+    // return retirement;
+    return `${firstName} retires in ${retirement} years`;
+}
+
+console.log(yearsUntillRetirement(1999, 'Ismaeel'));
+console.log(yearsUntillRetirement(1980, 'Bob'));
+
+// Arrow functions are typically used for one liner solutions!
+
 */
