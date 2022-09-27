@@ -1,6 +1,6 @@
+'use strict';
 /*
 // Strict mode helps us avoid making bugs. To inoke strict mode, use the following
-'use strict';
 
 // Important changes strict mode introduces
 
@@ -15,7 +15,7 @@ if (hasDriversLicense) console.log("I can drive :D!");
 // Strict mode also has reserved words that we can't use. Here are a few examples
 const interface = 'Audio';
 const private = 534;
-*/
+
 
 // Functions
 // Functions is a piece of code that we can reuse over and over again in our code.
@@ -48,3 +48,29 @@ console.log(appleOrangeJuice);
 // Functions without parameters and a return are typically a block of code that we want to reuse over and over again!
 
 // In summation Functions allows us to write resuable chunks of code instead of typing up the code over and over again! Keep our code dry (Don't Repeat Yourself)!
+
+
+// Function Declarations vs Expressions
+
+// The functions above are function decalarations because we used the function keyword to declare it 
+
+// Function declaration
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+const age1 = calcAge1(1999);
+console.log(age1);
+
+// Function expression
+const calcAge2 = function (birthYear) { // called an anonymous function
+    return 2037 - birthYear;
+}
+
+const age2 = calcAge2(1999);
+
+console.log(age1, age2);
+
+// Functions are values in JavaScript!
+
+// Use whichever format you'd like! I'd prefer function expressions so that I can organize my code however I would like to. Expressions > Declarations imo
+*/
