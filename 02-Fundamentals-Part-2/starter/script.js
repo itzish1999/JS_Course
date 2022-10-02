@@ -101,7 +101,7 @@ console.log(yearsUntillRetirement(1980, 'Bob'));
 
 // Arrow functions are typically used for one liner solutions!
 
-*/
+
 
 // Functions Calling Other Functions
 
@@ -121,3 +121,38 @@ function fruitProcessor(Apples, Oranges) {
 
 // Here I am console logging the function fruitProcessor and using 2, 3 to show how many apples/oranges I am using and then slicing them to create juice.
 console.log(fruitProcessor(2, 3));
+*/
+
+// Reviewing Functions
+
+const calcAge = function (birthYear) {
+    return 2037 - birthYear;
+}
+
+const yearsUntillRetirement = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+
+    if (retirement > 0) {
+        console.log(`${firstName} retires in ${retirement} years`);
+        return retirement; // Once a return is hit. Any code beneath it isn't touched! If you want to console log something, put it above!
+    } else {
+        console.log(`${firstName} retired already!`)
+        return -1;
+    }
+}
+
+console.log(yearsUntillRetirement(1999, "Ismaeel"));
+console.log(yearsUntillRetirement(1950, "Mike"));
+
+// Here are the three types of functions:
+
+function calcAge(birthYear) { // Function decalaration where we put the function name right after FUNCTION (can be used before declared)
+    return 2037 - birthYear;
+}
+
+const calcAge = function (birthYear) { // Anonomous function; a function value stored in an expression
+    return 2077 - birthYear;
+}
+
+const calcAge = birthYear => 2037 - birthYear; // Arrow function; used for one liners
