@@ -52,7 +52,7 @@ console.log(appleOrangeJuice);
 
 // Function Declarations vs Expressions
 
-// The functions above are function decalarations because we used the function keyword to declare it 
+// The functions above are function decalarations because we used the function keyword to declare it
 
 // Function declaration
 function calcAge1(birthYear) {
@@ -102,3 +102,22 @@ console.log(yearsUntillRetirement(1980, 'Bob'));
 // Arrow functions are typically used for one liner solutions!
 
 */
+
+// Functions Calling Other Functions
+
+// I am making a fruit slicer / juice app.
+function cutFruitPieces(fruit) { // I am creating one function here that uses math with fruit being the param. These aren't anon. functions
+    return fruit * 3;
+}
+
+function fruitProcessor(Apples, Oranges) {
+    const applePieces = cutFruitPieces(Apples); // Notice here how I am calling the other function in this function twice? Why? Its because I use apples/oranges in my params!
+    const orangePiences = cutFruitPieces(Oranges); // Second instance I call another function.
+
+    // A template string that I am using to show my results with everything done.
+    const juice = `Juice with ${applePieces} pieces of apples and ${orangePiences} pieces of oranges.`; // I used applePieces and orangePieces instead to see how many slices were used
+    return juice; // When I use return I am calling forth everything that has been done in the code and then presenting it
+}
+
+// Here I am console logging the function fruitProcessor and using 2, 3 to show how many apples/oranges I am using and then slicing them to create juice.
+console.log(fruitProcessor(2, 3));
